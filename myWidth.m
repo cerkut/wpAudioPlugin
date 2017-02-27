@@ -8,7 +8,7 @@ classdef myWidth < audioPlugin
     
      properties (Constant)
         PluginInterface = audioPluginInterface( ...
-            audioPluginParameter('Width', 'Mapping',{'lin',0,4fft}))
+            audioPluginParameter('Width', 'Mapping',{'lin',0,4}))
     end
     
     methods

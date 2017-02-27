@@ -11,7 +11,8 @@ classdef myModulator < audioPlugin
      properties (Constant)
         PluginInterface = audioPluginInterface( ...
             audioPluginParameter('AMP','DisplayName','ModIndex I','Mapping',{'lin',0,2}), ...
-            audioPluginParameter('ff','DisplayName','ModFreq f_m','Label','Hz','Mapping',{'log',10,100000}))
+            audioPluginParameter('ff','DisplayName','ModFreq f_m','Label','Hz','Mapping',{'log',10,100000}) , ...
+            'InputChannels',1, 'OutputChannels',1)
      end
      
      properties (Access = private, Hidden)

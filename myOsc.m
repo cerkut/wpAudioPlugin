@@ -10,7 +10,8 @@ classdef myOsc < audioPlugin
      properties (Constant)
         PluginInterface = audioPluginInterface( ...
             audioPluginParameter('AMP', 'Mapping',{'lin',0,2}), ...
-            audioPluginParameter('ff', 'Mapping',{'log',44,8800}))
+            audioPluginParameter('ff', 'Mapping',{'log',44,8800}) , ...
+            'OutputChannels',1)
      end
      
      properties
@@ -39,7 +40,6 @@ classdef myOsc < audioPlugin
             val = obj.pOSC.Amplitude;
         end
         % End of accessors to ensure that slider values processed. 
-        
         
         function out = process (plugin, in)
            plugin.pOSC.SamplesPerFrame = size(in,1); % We are deriving SamplesPerFrame from the input frame!
