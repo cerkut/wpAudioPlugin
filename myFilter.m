@@ -27,9 +27,9 @@ classdef myFilter < audioPlugin
            setupMIDIControls(p);
         end
         
-        function setupMIDIControls(obj)
-            configureMIDI(obj,'Fc',1009,'DeviceName','Teensy MIDI');
-        end
+%         function setupMIDIControls(obj)
+%             configureMIDI(obj,'Fc',1009,'DeviceName','Teensy MIDI');
+%         end
 
         function set.Fc(p,Fc)
             p.Fc = Fc;
@@ -39,13 +39,18 @@ classdef myFilter < audioPlugin
     
 end
 
-% Butterworth highpass
-function [b, a] = highPassCoeffs(Fc, Fs)
-  w0 = 2*pi*Fc/Fs;
-  alpha = sin(w0)/sqrt(2);
-  cosw0 = cos(w0);
-  norm = 1/(1+alpha);
-  b = (1 + cosw0)*norm * [.5  -1  .5];
-  a = [1  -2*cosw0*norm  (1 - alpha)*norm];
-end
+% % Butterworth highpass
+% function [b, a] = highPassCoeffs(Fc, Fs)
+%   w0 = 2*pi*Fc/Fs;
+%   alpha = sin(w0)/sqrt(2);
+%   cosw0 = cos(w0);
+%   norm = 1/(1+alpha);
+%   b = (1 + cosw0)*norm * [.5  -1  .5];
+%   a = [1  -2*cosw0*norm  (1 - alpha)*norm];
+% end
 
+function [b, a] = highPassCoeffs(Fc, Fs)
+d = designfilt('bandstopiir', 'FilterOrder', 2, 'HalfPowerFrequency1', Fc, 'HalfPowerFrequency2', 20000, 'SampleRate', Fs);
+b = d.Coefficients(1:3);
+a = d.Coefficients(4:6);
+end
