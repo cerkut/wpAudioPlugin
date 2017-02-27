@@ -4,8 +4,13 @@ See Charlie DeVane and Gabriele Bunkheila. 2016. Automatically Generating VST Pl
 https://www.mathworks.com/tagteam/89231_PluginGenerationEbriefMWFormat.pdf
 
 Suggested order:
+
 1. myWire (simple throughput)
+
 2. myWidth (Linear mapping/matrixing of channels, single slider UI)
+
 3. myFilePan
+
 4. myFileMix
+
 5. myOsc
