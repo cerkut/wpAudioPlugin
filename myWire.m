@@ -1,4 +1,4 @@
-classdef myWire < audioPlugin
+ppclassdef myWire < audioPlugin
     %MYWIRE Stereo throughput
     %   Detailed explanation goes here
     %   For learning how to handle enums at GUI 
