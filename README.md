@@ -6,11 +6,8 @@ https://www.mathworks.com/tagteam/89231_PluginGenerationEbriefMWFormat.pdf
 Suggested order:
 
 1. myWire (simple throughput)
-
 2. myWidth (Linear mapping/matrixing of channels, single slider UI)
-
-3. myFilePan
-
-4. myFileMix
-
-5. myOsc
+3. myFilePan (mixdown to mono)
+4. myFileMix (mix with an audio file)
+5. myOsc (use another audio object, accessors)
+6. ...
