@@ -1,8 +1,6 @@
 classdef myWiredArd < audioPlugin
-    %MYWIRE Stereo throughput
-    %   Detailed explanation goes here
-    %   For learning how to handle enums at GUI 
-    %   edit audioexample.StrobeFillEnum audiopluginexample.Strobe
+    %MYWIREARD Control gain of the input audio via Arduino pot
+    %   CHANGE THE GAIN EVERY 1024 samples
     
     properties
          gain = 1
