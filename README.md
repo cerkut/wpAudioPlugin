@@ -10,4 +10,4 @@ Suggested order:
 3. myFilePan (mixdown to mono)
 4. myFileMix (mix with an audio file)
 5. myOsc (use another audio object, accessors)
-6. myModulator: AM/Ring Modulation with =audioOscillator= class. GUI: Checkbox. 
+6. myModulator: AM/Ring Modulation with audioOscillator class. GUI: Checkbox. 
