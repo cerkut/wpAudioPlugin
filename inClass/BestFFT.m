@@ -1,6 +1,7 @@
 classdef BestFFT < audioPlugin
-    %BESTFFT Summary of this class goes here
-    %   Detailed explanation goes here
+    %BESTFFT Real-time FFT/iFFT with bin-based gain control
+    %   Demontrates frequency-domain filtering.
+    %   Written by Sune in Spring'16 MED4 Class.
     
     properties
         gain = 1;
