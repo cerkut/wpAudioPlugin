@@ -11,3 +11,7 @@ Suggested order:
 4. myFileMix (mix with an audio file)
 5. myOsc (use another audio object, accessors)
 6. myModulator: AM/Ring Modulation with audioOscillator class. GUI: Checkbox. 
+
+New Refrac (experimental):
+./analysis: audio analysis routines: envelope, xcorr, etc
+./hwSupport: arduino, iOS, Android, vs experiments
