@@ -3,3 +3,5 @@ audioplugin/*
 html/*
 obs/*
 slprj/*
+*.m~
+testbench_*

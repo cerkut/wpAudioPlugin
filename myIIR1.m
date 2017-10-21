@@ -7,8 +7,8 @@ classdef myIIR1 < audioPlugin
     
     properties
         % internal states
-        a = 0.5
-        z = 0
+        a = 0.5;
+        z = [0 0];
     end
     
     methods
@@ -17,7 +17,7 @@ classdef myIIR1 < audioPlugin
         end
         
         function reset(p)
-           p.z = 0;
+           p.z = [0 0];
            p.a = 0.5;
         end
         

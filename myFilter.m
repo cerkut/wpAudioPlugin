@@ -1,19 +1,20 @@
 classdef myFilter < audioPlugin
-    %myFilter Biquad highpass filter
-    %   Filter c
-    
+%myFilter Biquad highpass filter
+ %   Design pattern: Stereo filter state p.z, so that code generation
+ %   works.
+   
     properties
+        z = zeros(2)
         Fc = 50
     end
     
     properties (Constant)
         PluginInterface = audioPluginInterface(audioPluginParameter('Fc','Mapping',{'log', 50, 5000}))
     end
-    properties
+    properties (Access=private)
         % internal states
         b = zeros(1,3)
         a = ones(1,3) 
-        z = zeros(2)
     end
     
     methods
@@ -24,7 +25,7 @@ classdef myFilter < audioPlugin
         function reset(p)
            p.z = zeros(2);
            [p.b, p.a] = highPassCoeffs(p.Fc, getSampleRate(p));
-           setupMIDIControls(p);
+           % setupMIDIControls(p);
         end
         
 %         function setupMIDIControls(obj)
