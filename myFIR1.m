@@ -8,8 +8,8 @@ classdef myFIR1 < audioPlugin
     
     properties
         % internal states
-        b = 1.0
-        z = 0
+        b = 1.0;
+        z = [0 0];
     end
     
     methods
@@ -18,8 +18,8 @@ classdef myFIR1 < audioPlugin
         end
         
         function reset(p)
-           p.z = 0;
-           p.b = 0.5;
+           p.z = [0 0];
+           p.b = 1.0;
         end
         
     end
