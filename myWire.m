@@ -1,10 +1,7 @@
 classdef myWire < audioPlugin
     %MYWIRE Stereo throughput
-    %   Detailed explanation goes here
-    %   For learning how to handle enums at GUI 
-    %   edit audioexample.StrobeFillEnum audiopluginexample.Strobe
-    % 
-    
+    %   Simply copy the in buffer to out
+    %   Note that properties is optional, but process method is mandatory.
     
     %properties
     %end
