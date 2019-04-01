@@ -1,9 +1,9 @@
 classdef myWidth < audioPlugin
     %myWidth Stereo expension by center and side channels
-    %   Detailed explanation goes here
+    %   Defines a property <width> which is tuned by a slider.
     
     properties
-        Width = 4
+        Width = 1
     end
     
      properties (Constant)

@@ -1,8 +1,9 @@
 classdef myOsc < audioPlugin
     %myOsc audioPlugin by using audioOscillator class
     %   Detailed explanation goes here
-    
-    properties (Dependent) % These are the properties of audioOscillator, therefore dependent.
+
+    % These are the properties of audioOscillator, therefore dependent.
+    properties (Dependent) 
         ff = 440
         AMP = 1
     end
