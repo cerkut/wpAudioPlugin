@@ -7,3 +7,4 @@ slprj/*
 testbench_*
 *.MATLABDriveTag
 
+*.gitkeep
