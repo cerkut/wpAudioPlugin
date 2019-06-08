@@ -12,7 +12,7 @@ Suggested order, starting with the [[./01-Basics]] directory:
 2. myWidth (Linear mapping/matrixing of channels, single slider UI)
 3. myFilePan (mixdown to mono)
 
-and then the rest of the subdirectory.
+and then the rest of the subdirectory. A Live Script .mlx (and its source .m script) are also provided there for experimentation.
 
 In [[./02-Sources]], we inherit 
 
