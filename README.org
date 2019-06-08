@@ -1,12 +1,10 @@
 # wpAudioPlugin
 
 Example code using MATLAB Audio System Toolbox.
-See Charlie DeVane and Gabriele Bunkheila. 2016. 
-Automatically Generating VST Plugins from MATLAB Code. 
-https://www.mathworks.com/tagteam/89231_PluginGenerationEbriefMWFormat.pdf
 
-Check also MATLAB Audio Plugin Example Gallery at 
-https://se.mathworks.com/help/audio/ug/audio-plugin-example-gallery.html
+See Charlie DeVane and Gabriele Bunkheila. 2016.  Automatically Generating VST Plugins from MATLAB Code.  https://www.mathworks.com/tagteam/89231_PluginGenerationEbriefMWFormat.pdf
+
+Check also MATLAB Audio Plugin Example Gallery at https://se.mathworks.com/help/audio/ug/audio-plugin-example-gallery.html
 
 Suggested order, starting with the [[./01-Basics]] directory:
 
@@ -25,6 +23,7 @@ In [[./02-Sources]], we inherit
 New Refrac (experimental):
 ./analysis: audio analysis routines: envelope, xcorr, etc
 ./hwSupport: arduino, iOS, Android, vs experiments
+
 
 * PROJECT
 

@@ -6,5 +6,5 @@ slprj/*
 *.m~
 testbench_*
 *.MATLABDriveTag
-
+VST/*
 *.gitkeep
