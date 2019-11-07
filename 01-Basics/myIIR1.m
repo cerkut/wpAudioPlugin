@@ -2,7 +2,7 @@ classdef myIIR1 < audioPlugin
     %myIIR Assignment 10a
     %   See myFIR. 
     properties (Constant)
-        PluginInterface = audioPluginInterface(audioPluginParameter('a','Mapping',{'lin', 0, 1.0}))
+        PluginInterface = audioPluginInterface(audioPluginParameter('a','Mapping',{'lin', 0.0, 1.0}))
     end
     
     properties
