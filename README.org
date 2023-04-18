@@ -27,6 +27,7 @@ New Refrac (experimental):
 
 * PROJECT
 
-** TODO Add colored noise source plugins
+** CANCELLED Add colored noise source plugins: 
+   Avaliable as a source at audioTestBench using =dsp.ColoredNoise=
 
 
