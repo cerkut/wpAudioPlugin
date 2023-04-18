@@ -27,6 +27,6 @@ New Refrac (experimental):
 
 * PROJECT
 
-** TODO Add colored noice source plugins
+** TODO Add colored noise source plugins
 
 
