@@ -2,7 +2,8 @@
 
 Example code using MATLAB Audio System Toolbox.
 
-https://matlab.mathworks.com/open/github/v1?repo=cerkut/wpAudioPlugin
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=cerkut/wpAudioPlugin)
+
 
 Initially based on Charlie DeVane and Gabriele Bunkheila. 2016.  
 Automatically Generating VST Plugins from MATLAB Code.  
